@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hulton Hotel</title>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="booking/css/booking.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/camera.js"></script>
+		<!--[if (gt IE 9)|!(IE)]><!-->
+		<script src="js/jquery.mobile.customized.min.js"></script>
+		<!--<![endif]-->
+		<script src="booking/js/booking.js"></script>
+		<script>
+			$(document).ready(function(){
+			jQuery('#camera_wrap').camera({
+				loader: false,
+				pagination: false ,
+				minHeight: '444',
+				thumbnails: false,
+				height: '48.375%',
+				caption: true,
+				navigation: true,
+				fx: 'mosaic'
+			});
+			/*carousel*/
+			var owl=$("#owl");
+				owl.owlCarousel({
+				items : 2, //10 items above 1000px browser width
+				itemsDesktop : [995,2], //5 items between 1000px and 901px
+				itemsDesktopSmall : [767, 2], // betweem 900px and 601px
+				itemsTablet: [700, 2], //2 items between 600 and 0
+				itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+				navigation : true,
+				pagination : false
+				});
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+	</head>
+	<body class="page1" id="top">
+<!--==============================header=================================-->
+		<header>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="menu_block">
+						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+							<ul class="sf-menu">
+								<li class="current"><a href="index.html">ABOUT</a></li>
+								<li><a href="index-1.html">Locations</a></li>
+								<li><a href="index-2.html">SPECIAL OFFERS</a></li>
+								<li><a href="index-3.html">Reviews</a></li>
+								<li><a href="index-4.html">CONTACTS</a></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_12">
+					<h1>
+						<a href="index.html">
+							<img src="images/logo.png" alt="Your Happy Family">
+						</a>
+					</h1>
+				</div>
+			</div>
+		</header>
+		<div class="slider_wrapper">
+			<div id="camera_wrap" class="">
+				<div data-src="images/slide.jpg">
+					<div class="caption fadeIn">
+						<h2>LONDON</h2>
+						<div class="price">
+							FROM
+							<span>$250</span>
+						</div>
+						<a href="index-1.html">LEARN MORE</a>
+					</div>
+				</div>
+				<div data-src="images/slide1.jpg">
+					<div class="caption fadeIn">
+						<h2>Maldives</h2>
+						<div class="price">
+							FROM
+							<span>$1200</span>
+						</div>
+						<a href="index-1.html">LEARN MORE</a>
+					</div>
+				</div>
+				<div data-src="images/slide2.jpg">
+					<div class="caption fadeIn">
+						<h2>Venice</h2>
+						<div class="price">
+							FROM
+							<span>$160</span>
+						</div>
+						<a href="index-1.html">LEARN MORE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--==============================Content=================================-->
+		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
+			<div class="container_12">
+				<div class="grid_4">
+					<div class="banner">
+						<img src="images/ban_img1.jpg" alt="">
+						<div class="label">
+							<div class="title">Barcelona</div>
+							<div class="price">FROM<span>$ 110</span></div>
+							<a href="index-1.html">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<img src="images/ban_img2.jpg" alt="">
+						<div class="label">
+							<div class="title">GOA</div>
+							<div class="price">FROM<span>$ 125</span></div>
+							<a href="index-1.html">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<img src="images/ban_img3.jpg" alt="">
+						<div class="label">
+							<div class="title">PARIS</div>
+							<div class="price">FROM<span>$ 320</span></div>
+							<a href="index-1.html">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="grid_6">
+					<h3>Login</h3>
+					<form id="bookingForm">
+						<div class="fl">
+							<div class="tmInput">
+								<input name="CID" placeHolder="Customer ID #" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="tmInput">
+								<input name="Password" placeHolder="Password" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+						</div>
+						<a href="index-10.html" data-type="submit" class="btn">Login</a>
+					</form>
+					<h3>Register</h3>
+					<a href="index-9.html" class="btn">Register</a>
+				</div>
+				<div class="grid_5 prefix_1">
+					<h3>Welcome</h3>
+					<div class="extra_wrapper">
+						<p>Hulton Chain Hotel has been around since 1962. Due to great services and unmatched hospitality, Hulton continues to be a leader in the Hotel Industries. Travel is made easier at Hulton Hotels.</p>
+					<h4>Reviews</h4>
+					<blockquote class="bq1">
+						<img src="images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
+						<div class="extra_wrapper">
+							<p>Cannot be faulted from the wonderful food, excellent accommodation and staff who go the extra mile all the time.</p>
+							<div class="alright">
+								<div class="col1">Billy Bob</div>
+								<a href="index-3.html" class="btn">More</a>
+							</div>
+						</div>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<script>
+			$(function (){
+				$('#bookingForm').bookingForm({
+					ownerEmail: '#'
+				});
+			})
+			$(function() {
+				$('#bookingForm input, #bookingForm textarea').placeholder();
+			});
+		</script>
+	</body>
+</html>
+
